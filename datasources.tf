@@ -35,7 +35,7 @@ resource "azurerm_public_ip" "example" {
   resource_group_name = data.azurerm_resource_group.existing_rg.name
 
 
-  allocation_method   = "Static"
+  allocation_method = "Static"
 }
 
 resource "azurerm_virtual_machine" "main" {
